@@ -1,0 +1,25 @@
+<h1 id="tableLabel">Candidatos</h1>
+
+<p *ngIf="!candidates"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="candidates">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidate of candidates">
+      <td>{{ candidate.name }} </td>
+      <td>{{ candidate.phone }}</td>
+      <td>{{ candidate.city }}</td>
+      <td>{{ candidate.state }}</td>
+      <td><a href="candidate/{{ candidate.id }}" class="btn-primary btn"> Editar</a>
+      <button (click)="delete(candidate.id)" class="btn btn-danger ml-2"> Deletar</button></td>
+    </tr>
+  </tbody>
+</table>

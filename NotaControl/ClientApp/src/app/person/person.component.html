@@ -1,0 +1,228 @@
+<h1 id="tableLabel">Cadastre-se </h1>
+
+<form [formGroup]="form">
+
+  <div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label">Nome</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="name" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="email" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" formControlName="email" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="phone" class="col-sm-2 col-form-label">Telefone</label>
+    <div class="col-sm-10">
+      <input type="tel" class="form-control" formControlName="phone" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="skype" class="col-sm-2 col-form-label">Skype</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="skype" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="linkedin" class="col-sm-2 col-form-label">Linked-in</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="linkedin" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="city" class="col-sm-2 col-form-label">Cidade</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="city" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="state" class="col-sm-2 col-form-label">Estado</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="state" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="portfolio" class="col-sm-2 col-form-label">Portfolio</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="portfolio" />
+    </div>
+  </div>
+
+  <h3 class="my-2">What is your willingness to work today? / Qual é sua disponibilidade para trabalhar hoje?</h3>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="perDayUpTo4">
+        <label class="form-check-label" for="perDayUpTo4">
+          Up to 4 hours per day / Até 4 horas por dia
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="perDay4To6">
+        <label class="form-check-label" for="perDay4To6">
+          4 to 6 hours per day / De 4 á 6 horas por dia
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="perDay6To8">
+        <label class="form-check-label" for="perDay6To8">
+          6 to 8 hours per day /De 6 á 8 horas por dia
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="perDayUpTo8">
+        <label class="form-check-label" for="perDayUpTo8">
+          Up to 8 hours a day (are you sure?) / Acima de 8 horas por dia (tem certeza?)
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="onlyWeeKend">
+        <label class="form-check-label" for="onlyWeeKend">
+          Only weekends / Apenas finais de semana
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="my-3">What's the best time to work for you? / Pra você qual é o melhor horário para trabalhar?</h3>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="morning">
+        <label class="form-check-label" for="morning">
+          Morning (from 08:00 to 12:00) / Manhã (de 08:00 ás 12:00)
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="afternoon">
+        <label class="form-check-label" for="afternoon">
+          Afternoon (from 1:00 p.m. to 6:00 p.m.) / Tarde (de 13:00 ás 18:00)
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="night">
+        <label class="form-check-label" for="night">
+          Night (7:00 p.m. to 10:00 p.m.) /Noite (de 19:00 as 22:00)
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="dawn">
+        <label class="form-check-label" for="dawn">
+          Dawn (from 10 p.m. onwards) / Madrugada (de 22:00 em diante)
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" formControlName="business">
+        <label class="form-check-label" for="business">
+          Business (from 08:00 a.m. to 06:00 p.m.) / Comercial (de 08:00 as 18:00)
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <label class="form-check-label" for="hourlySalaryRequirement">
+        What is your hourly salary requirements? / Qual sua pretensão salarial por hora? *
+      </label>
+      <input type="number" class="form-control" formControlName="hourlySalaryRequirement" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngIf="!knowledges"><em>Loading...</em></li>
+        <li *ngFor="let knowledge of knowledges" class="mt-1 list-group-item">
+          <h3>{{ knowledge.name }}</h3>
+          <small>{{ knowledge.description }}</small>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="knowledges_{{knowledge.id}}" id="knowledge_{{knowledge.id}}_1" value="1">
+              <label class="form-check-label" for="knowledge_{{knowledge.id}}_1">1</label>
+            </div>
+            <div class="form-check form-check-inline ml-1">
+              <input class="form-check-input" type="radio" name="knowledges_{{knowledge.id}}" id="knowledge_{{knowledge.id}}_2" value="2">
+              <label class="form-check-label" for="knowledge_{{knowledge.id}}_2">2</label>
+            </div>
+            <div class="form-check form-check-inline ml-1">
+              <input class="form-check-input" type="radio" name="knowledges_{{knowledge.id}}" id="knowledge_{{knowledge.id}}_3" value="3">
+              <label class="form-check-label" for="knowledge_{{knowledge.id}}_3">3</label>
+            </div>
+            <div class="form-check form-check-inline ml-1">
+              <input class="form-check-input" type="radio" name="knowledges_{{knowledge.id}}" id="knowledge_{{knowledge.id}}_4" value="4">
+              <label class="form-check-label" for="knowledge_{{knowledge.id}}_4">4</label>
+            </div>
+            <div class="form-check form-check-inline ml-1">
+              <input class="form-check-input" type="radio" name="knowledges_{{knowledge.id}}" id="knowledge_{{knowledge.id}}_5" value="5">
+              <label class="form-check-label" for="knowledge_{{knowledge.id}}_5">5</label>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-12">
+      <button type="button" (click)="save()" *ngIf="candidate.id==0" class="btn btn-block btn-primary">Salvar</button>
+      <button type="button" (click)="update()" *ngIf="candidate.id>0"  class="btn btn-block btn-primary">Alterar</button>
+    </div>
+  </div>
+
+</form>
+
+
